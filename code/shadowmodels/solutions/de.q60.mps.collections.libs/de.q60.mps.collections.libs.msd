@@ -9,11 +9,6 @@
     </modelRoot>
     <modelRoot contentPath="${module}" type="default" />
   </models>
-  <facets>
-    <facet type="java">
-      <classes generated="true" path="${module}/classes_gen" />
-    </facet>
-  </facets>
   <stubModelEntries>
     <stubModelEntry path="${module}/lib/trove4j-3.0.3.jar" />
     <stubModelEntry path="${module}/lib/vavr-0.9.3.jar" />
