@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="de.itemis.mps.editor.diagram.runtime" uuid="1144260c-e9a5-49a2-9add-39a1a1a7077e" moduleVersion="0" pluginKind="PLUGIN_EDITOR" compileInMPS="true">
+<solution name="de.itemis.mps.editor.diagram.runtime" uuid="1144260c-e9a5-49a2-9add-39a1a1a7077e" moduleVersion="0" pluginKind="PLUGIN_OTHER" compileInMPS="true">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
