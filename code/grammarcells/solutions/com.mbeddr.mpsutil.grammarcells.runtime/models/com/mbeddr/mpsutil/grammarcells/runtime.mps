@@ -46,7 +46,6 @@
     <import index="gkj1" ref="r:5e3f9658-4109-4862-9de6-6b623aa795b5(com.mbeddr.mpsutil.grammarcells.runtime.editorregistry)" />
     <import index="j9co" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.event(MPS.Core/)" />
     <import index="4it6" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.loading(MPS.Core/)" />
-    <import index="ykok" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.constraints(MPS.Core/)" />
     <import index="tpce" ref="r:00000000-0000-4000-0000-011c89590292(jetbrains.mps.lang.structure.structure)" />
     <import index="tpcn" ref="r:00000000-0000-4000-0000-011c8959028b(jetbrains.mps.lang.structure.behavior)" />
     <import index="gdpt" ref="r:27fc9218-2a6a-48c7-b6cf-3d630d9aaacd(com.mbeddr.mpsutil.grammarcells.runtime.menu)" />
@@ -65,6 +64,8 @@
     <import index="y49u" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.util(MPS.OpenAPI/)" />
     <import index="pdwk" ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee/java:jetbrains.mps.core.aspects.constraints.rules.kinds(jetbrains.mps.lang.constraints.rules.runtime/)" />
     <import index="6r6f" ref="r:d5239ba2-cf7c-43a5-8408-24daf38044ca(com.mbeddr.mpsutil.grammarcells.runtime.plugin)" />
+    <import index="ykok" ref="8e98f4e2-decf-4e97-bf80-9109e8b759ee/java:jetbrains.mps.smodel.constraints(jetbrains.mps.lang.constraints.rules.runtime/)" />
+    <import index="j809" ref="aaaaf3e2-decf-4e97-bf80-9109eab759ee/java:jetbrains.mps.core.aspects.feedback.messages(jetbrains.mps.lang.feedback.problem.legacy-constraints/)" />
     <import index="lwvz" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.selection(MPS.Editor/)" implicit="true" />
     <import index="hox0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.style(MPS.Editor/)" implicit="true" />
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
@@ -201,6 +202,9 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ng" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1092119917967" name="jetbrains.mps.baseLanguage.structure.MulExpression" flags="nn" index="17qRlL" />
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -2464,20 +2468,41 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="6rVC5beYLyY" role="3cqZAp">
-          <node concept="2YIFZM" id="6rVC5beYM5j" role="3clFbG">
-            <ref role="37wK5l" to="ykok:~ModelConstraints.validatePropertyValue(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SProperty,java.lang.Object,jetbrains.mps.smodel.runtime.CheckingNodeContext)" resolve="validatePropertyValue" />
-            <ref role="1Pybhc" to="ykok:~ModelConstraints" resolve="ModelConstraints" />
-            <node concept="37vLTw" id="6rVC5beYSXu" role="37wK5m">
-              <ref role="3cqZAo" node="4qdNcH$28X0" resolve="dummyNode" />
+        <node concept="3cpWs8" id="6xN9NKsHJtA" role="3cqZAp">
+          <node concept="3cpWsn" id="6xN9NKsHJtB" role="3cpWs9">
+            <property role="TrG5h" value="c" />
+            <node concept="3uibUv" id="6xN9NKsHIgl" role="1tU5fm">
+              <ref role="3uigEE" to="j809:~FailingPropertyConstraintContext" resolve="FailingPropertyConstraintContext" />
             </node>
-            <node concept="37vLTw" id="6rVC5beYT7m" role="37wK5m">
-              <ref role="3cqZAo" node="1gQHfgGXGiM" resolve="property" />
+            <node concept="2ShNRf" id="6xN9NKsHJtC" role="33vP2m">
+              <node concept="1pGfFk" id="6xN9NKsHJtD" role="2ShVmc">
+                <property role="373rjd" value="true" />
+                <ref role="37wK5l" to="j809:~FailingPropertyConstraintContext.&lt;init&gt;(org.jetbrains.mps.openapi.model.SNode,org.jetbrains.mps.openapi.language.SProperty,java.lang.Object)" resolve="FailingPropertyConstraintContext" />
+                <node concept="37vLTw" id="6xN9NKsHJtE" role="37wK5m">
+                  <ref role="3cqZAo" node="4qdNcH$28X0" resolve="dummyNode" />
+                </node>
+                <node concept="37vLTw" id="6xN9NKsHJtF" role="37wK5m">
+                  <ref role="3cqZAo" node="1gQHfgGXGiM" resolve="property" />
+                </node>
+                <node concept="37vLTw" id="6xN9NKsHJtG" role="37wK5m">
+                  <ref role="3cqZAo" node="6rVC5beYN7H" resolve="internalValue" />
+                </node>
+              </node>
             </node>
-            <node concept="37vLTw" id="6rVC5beYXrU" role="37wK5m">
-              <ref role="3cqZAo" node="6rVC5beYN7H" resolve="internalValue" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6xN9NKsHXCN" role="3cqZAp">
+          <node concept="2OqwBi" id="6xN9NKsHOJ6" role="3cqZAk">
+            <node concept="2YIFZM" id="6xN9NKsH8c5" role="2Oq$k0">
+              <ref role="37wK5l" to="ykok:~ConstraintsChildAndPropFacade.checkPropertyValue(jetbrains.mps.core.aspects.feedback.messages.FailingPropertyConstraintContext)" resolve="checkPropertyValue" />
+              <ref role="1Pybhc" to="ykok:~ConstraintsChildAndPropFacade" resolve="ConstraintsChildAndPropFacade" />
+              <node concept="37vLTw" id="6xN9NKsHMxd" role="37wK5m">
+                <ref role="3cqZAo" node="6xN9NKsHJtB" resolve="c" />
+              </node>
             </node>
-            <node concept="10Nm6u" id="_I9mxtxgCK" role="37wK5m" />
+            <node concept="liA8E" id="6xN9NKsHTNV" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
+            </node>
           </node>
         </node>
       </node>
