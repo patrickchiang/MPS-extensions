@@ -33,7 +33,7 @@ wrapper {
 apply plugin: 'download-jbr'
 
 downloadJbr {
-    jbrVersion = '17.0.3-b469.32'
+    jbrVersion = '17.0.7-b1000.6'
 }
 
 // detect if we are in a CI build
@@ -63,7 +63,7 @@ ext.dependencyRepositories = [
 // Dependency versions
 
 // major version, e.g. '2021.1', '2021.2'
-ext.mpsMajor = '2022.2'
+ext.mpsMajor = '2023.2'
 // optional minor/bugfix number (not added to the final build version)
 ext.mpsMinor = ''
 // e.g. Beta, EAP, RC
@@ -87,7 +87,7 @@ if (ciBuild) {
     println "##teamcity[buildNumber '${version}']"
 } else {
     println "Local build detected, version will be SNAPSHOT"
-    version = "2020.3-SNAPSHOT"
+    version = "2023.2-SNAPSHOT"
 }
 
 def userHome = System.properties['user.home']
