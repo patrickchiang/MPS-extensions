@@ -444,6 +444,7 @@
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
+      <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
         <property id="1238684351431" name="asCast" index="1BlNFB" />
       </concept>
@@ -34954,6 +34955,70 @@
       </node>
       <node concept="2tJIrI" id="56WqtlUiAvB" role="jymVt" />
     </node>
+    <node concept="2tJIrI" id="3NPRQpb4A$u" role="jymVt" />
+    <node concept="312cEu" id="3NPRQpb4Dhy" role="jymVt">
+      <property role="TrG5h" value="DuplicateColumnAction" />
+      <node concept="2tJIrI" id="3NPRQpb4Dhz" role="jymVt" />
+      <node concept="3Tm1VV" id="3NPRQpb4Dh$" role="1B3o_S" />
+      <node concept="3uibUv" id="3NPRQpb4Dh_" role="1zkMxy">
+        <ref role="3uigEE" node="7IUya7ch5ON" resolve="AbstractTableCellAction" />
+      </node>
+      <node concept="3clFbW" id="3NPRQpb4DhA" role="jymVt">
+        <node concept="3cqZAl" id="3NPRQpb4DhB" role="3clF45" />
+        <node concept="3Tm1VV" id="3NPRQpb4DhC" role="1B3o_S" />
+        <node concept="37vLTG" id="3NPRQpb4DhD" role="3clF46">
+          <property role="TrG5h" value="cell" />
+          <node concept="3uibUv" id="3NPRQpb4DhE" role="1tU5fm">
+            <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="3NPRQpb4DhF" role="3clF47">
+          <node concept="XkiVB" id="3NPRQpb4DhG" role="3cqZAp">
+            <ref role="37wK5l" node="7IUya7chrcn" resolve="AbstractTableCellAction" />
+            <node concept="37vLTw" id="3NPRQpb4DhH" role="37wK5m">
+              <ref role="3cqZAo" node="3NPRQpb4DhD" resolve="cell" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2tJIrI" id="3NPRQpb4DhI" role="jymVt" />
+      <node concept="3clFb_" id="3NPRQpb4DhJ" role="jymVt">
+        <property role="TrG5h" value="getActionType" />
+        <node concept="3Tm1VV" id="3NPRQpb4DhK" role="1B3o_S" />
+        <node concept="3uibUv" id="3NPRQpb4DhL" role="3clF45">
+          <ref role="3uigEE" node="56WqtlUi2XZ" resolve="TableActionType" />
+        </node>
+        <node concept="3clFbS" id="3NPRQpb4DhM" role="3clF47">
+          <node concept="3clFbF" id="3NPRQpb4DhN" role="3cqZAp">
+            <node concept="Rm8GO" id="3NPRQpb4J5m" role="3clFbG">
+              <ref role="Rm8GQ" node="56WqtlUilBp" resolve="COLUMN" />
+              <ref role="1Px2BO" node="56WqtlUi2XZ" resolve="TableActionType" />
+            </node>
+          </node>
+        </node>
+        <node concept="2AHcQZ" id="3NPRQpb4DhP" role="2AJF6D">
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+        </node>
+      </node>
+      <node concept="2tJIrI" id="3NPRQpb4DhQ" role="jymVt" />
+      <node concept="3clFb_" id="3NPRQpb4DhR" role="jymVt">
+        <property role="TrG5h" value="execute" />
+        <node concept="3Tm1VV" id="3NPRQpb4DhS" role="1B3o_S" />
+        <node concept="3cqZAl" id="3NPRQpb4DhT" role="3clF45" />
+        <node concept="37vLTG" id="3NPRQpb4DhU" role="3clF46">
+          <property role="TrG5h" value="context" />
+          <node concept="3uibUv" id="3NPRQpb4DhV" role="1tU5fm">
+            <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="3NPRQpb4DhW" role="3clF47" />
+        <node concept="2AHcQZ" id="3NPRQpb4Dia" role="2AJF6D">
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+        </node>
+      </node>
+      <node concept="2tJIrI" id="3NPRQpb4Dib" role="jymVt" />
+    </node>
+    <node concept="2tJIrI" id="3NPRQpb4AJT" role="jymVt" />
     <node concept="2tJIrI" id="7IUya7cgZJl" role="jymVt" />
     <node concept="312cEu" id="4db20qfqg3Y" role="jymVt">
       <property role="TrG5h" value="InsertRowAction" />
@@ -35099,6 +35164,98 @@
         <ref role="3uigEE" node="7IUya7ch5ON" resolve="AbstractTableCellAction" />
       </node>
     </node>
+    <node concept="2tJIrI" id="7uqHh_r90qX" role="jymVt" />
+    <node concept="312cEu" id="7uqHh_r8v2K" role="jymVt">
+      <property role="TrG5h" value="DuplicateRowAction" />
+      <node concept="2tJIrI" id="7uqHh_r8v2L" role="jymVt" />
+      <node concept="3Tm1VV" id="7uqHh_r8v2Q" role="1B3o_S" />
+      <node concept="3uibUv" id="7uqHh_r8v2R" role="1zkMxy">
+        <ref role="3uigEE" node="7IUya7ch5ON" resolve="AbstractTableCellAction" />
+      </node>
+      <node concept="3clFbW" id="7uqHh_r8v2S" role="jymVt">
+        <node concept="3cqZAl" id="7uqHh_r8v2T" role="3clF45" />
+        <node concept="3Tm1VV" id="7uqHh_r8v2U" role="1B3o_S" />
+        <node concept="37vLTG" id="7uqHh_r8v2V" role="3clF46">
+          <property role="TrG5h" value="cell" />
+          <node concept="3uibUv" id="7uqHh_r8v2W" role="1tU5fm">
+            <ref role="3uigEE" to="f4zo:~EditorCell" resolve="EditorCell" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="7uqHh_r8v2Z" role="3clF47">
+          <node concept="XkiVB" id="7uqHh_r8v30" role="3cqZAp">
+            <ref role="37wK5l" node="7IUya7chrcn" resolve="AbstractTableCellAction" />
+            <node concept="37vLTw" id="7uqHh_r8v31" role="37wK5m">
+              <ref role="3cqZAo" node="7uqHh_r8v2V" resolve="cell" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2tJIrI" id="7uqHh_r8v38" role="jymVt" />
+      <node concept="3clFb_" id="7uqHh_r8v39" role="jymVt">
+        <property role="TrG5h" value="getActionType" />
+        <node concept="3Tm1VV" id="7uqHh_r8v3a" role="1B3o_S" />
+        <node concept="3uibUv" id="7uqHh_r8v3b" role="3clF45">
+          <ref role="3uigEE" node="56WqtlUi2XZ" resolve="TableActionType" />
+        </node>
+        <node concept="3clFbS" id="7uqHh_r8v3c" role="3clF47">
+          <node concept="3clFbF" id="7uqHh_r8v3d" role="3cqZAp">
+            <node concept="Rm8GO" id="7uqHh_r8V_1" role="3clFbG">
+              <ref role="1Px2BO" node="56WqtlUi2XZ" resolve="TableActionType" />
+              <ref role="Rm8GQ" node="56WqtlUikN_" resolve="ROW" />
+            </node>
+          </node>
+        </node>
+        <node concept="2AHcQZ" id="7uqHh_r8v3f" role="2AJF6D">
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+        </node>
+      </node>
+      <node concept="2tJIrI" id="7uqHh_r8v4m" role="jymVt" />
+      <node concept="3clFb_" id="7uqHh_r8v4n" role="jymVt">
+        <property role="TrG5h" value="execute" />
+        <node concept="3Tm1VV" id="7uqHh_r8v4o" role="1B3o_S" />
+        <node concept="3cqZAl" id="7uqHh_r8v4p" role="3clF45" />
+        <node concept="37vLTG" id="7uqHh_r8v4q" role="3clF46">
+          <property role="TrG5h" value="context" />
+          <node concept="3uibUv" id="7uqHh_r8v4r" role="1tU5fm">
+            <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="7uqHh_r8v4s" role="3clF47">
+          <node concept="3cpWs8" id="7uqHh_r9zt6" role="3cqZAp">
+            <node concept="3cpWsn" id="7uqHh_r9zt7" role="3cpWs9">
+              <property role="TrG5h" value="nodeOfRow" />
+              <node concept="3Tqbb2" id="7uqHh_r9y8e" role="1tU5fm" />
+              <node concept="2OqwBi" id="7uqHh_r9zt8" role="33vP2m">
+                <node concept="Xjq3P" id="7uqHh_r9zt9" role="2Oq$k0" />
+                <node concept="liA8E" id="7uqHh_r9zta" role="2OqNvi">
+                  <ref role="37wK5l" node="7IUya7ccS5V" resolve="getNodeOfRow" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="7uqHh_r9CQJ" role="3cqZAp">
+            <node concept="2OqwBi" id="7uqHh_r9E4o" role="3clFbG">
+              <node concept="37vLTw" id="7uqHh_r9CQH" role="2Oq$k0">
+                <ref role="3cqZAo" node="7uqHh_r9zt7" resolve="nodeOfRow" />
+              </node>
+              <node concept="HtI8k" id="7uqHh_r9F8X" role="2OqNvi">
+                <node concept="2OqwBi" id="7uqHh_r9Hi1" role="HtI8F">
+                  <node concept="37vLTw" id="7uqHh_r9GNf" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7uqHh_r9zt7" resolve="nodeOfRow" />
+                  </node>
+                  <node concept="1$rogu" id="7uqHh_r9IuT" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2AHcQZ" id="7uqHh_r8v5a" role="2AJF6D">
+          <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+        </node>
+      </node>
+      <node concept="2tJIrI" id="7uqHh_r8v5b" role="jymVt" />
+    </node>
+    <node concept="2tJIrI" id="7uqHh_r90_M" role="jymVt" />
     <node concept="2tJIrI" id="7IUya7cfFbO" role="jymVt" />
     <node concept="312cEu" id="5AW5JoZb6HC" role="jymVt">
       <property role="TrG5h" value="SelectRowNodeAction" />

@@ -731,6 +731,11 @@
             <ref role="tCJdB" node="6R0q0mZQKWi" resolve="DeleteColumn" />
           </node>
         </node>
+        <node concept="2JFkCU" id="7uqHh_r9L6P" role="3cqZAp">
+          <node concept="tCFHf" id="7uqHh_r9L7n" role="2JFLmv">
+            <ref role="tCJdB" node="7uqHh_r8q8x" resolve="DuplicateRow" />
+          </node>
+        </node>
         <node concept="2JFkCU" id="F5PM1gbFgf" role="3cqZAp">
           <node concept="2a7GMi" id="F5PM1gbFgC" role="2JFLmv" />
         </node>
@@ -1139,6 +1144,83 @@
         <ref role="3cqZAo" to="z2i8:~AllIcons$General.Remove" resolve="Remove" />
         <ref role="1PxDUh" to="z2i8:~AllIcons$General" resolve="General" />
       </node>
+    </node>
+  </node>
+  <node concept="sE7Ow" id="7uqHh_r8q8x">
+    <property role="TrG5h" value="DuplicateRow" />
+    <property role="2uzpH1" value="Duplicate the Current Row" />
+    <property role="2YLI8m" value="6u2MFnph2yk/editorCommand" />
+    <property role="3GE5qa" value="actions" />
+    <node concept="tnohg" id="7uqHh_r8q8y" role="tncku">
+      <node concept="3clFbS" id="7uqHh_r8q8z" role="2VODD2">
+        <node concept="3clFbF" id="7uqHh_r9gLF" role="3cqZAp">
+          <node concept="2OqwBi" id="7uqHh_r9gLG" role="3clFbG">
+            <node concept="2ShNRf" id="7uqHh_r9gLH" role="2Oq$k0">
+              <node concept="1pGfFk" id="7uqHh_r9gLI" role="2ShVmc">
+                <property role="373rjd" value="true" />
+                <ref role="37wK5l" to="hm5v:7uqHh_r8v2S" resolve="DuplicateRowAction" />
+                <node concept="2OqwBi" id="7uqHh_r9gLJ" role="37wK5m">
+                  <node concept="2WthIp" id="7uqHh_r9gLK" role="2Oq$k0" />
+                  <node concept="1DTwFV" id="7uqHh_r9gLL" role="2OqNvi">
+                    <ref role="2WH_rO" node="7uqHh_r8q8K" resolve="cell" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="7uqHh_r9gLM" role="2OqNvi">
+              <ref role="37wK5l" to="hm5v:7uqHh_r8v4n" resolve="execute" />
+              <node concept="2OqwBi" id="7uqHh_r9gLN" role="37wK5m">
+                <node concept="2WthIp" id="7uqHh_r9gLO" role="2Oq$k0" />
+                <node concept="1DTwFV" id="7uqHh_r9gLP" role="2OqNvi">
+                  <ref role="2WH_rO" node="7uqHh_r8q8M" resolve="context" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1DS2jV" id="7uqHh_r8q8K" role="1NuT2Z">
+      <property role="TrG5h" value="cell" />
+      <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CELL" resolve="EDITOR_CELL" />
+      <node concept="1oajcY" id="7uqHh_r8q8L" role="1oa70y" />
+    </node>
+    <node concept="1DS2jV" id="7uqHh_r8q8M" role="1NuT2Z">
+      <property role="TrG5h" value="context" />
+      <ref role="1DUlNI" to="k3nr:~MPSEditorDataKeys.EDITOR_CONTEXT" resolve="EDITOR_CONTEXT" />
+      <node concept="1oajcY" id="7uqHh_r8q8N" role="1oa70y" />
+    </node>
+    <node concept="2ScWuX" id="7uqHh_r8q8O" role="tmbBb">
+      <node concept="3clFbS" id="7uqHh_r8q8P" role="2VODD2">
+        <node concept="3clFbF" id="7uqHh_r9e2_" role="3cqZAp">
+          <node concept="2OqwBi" id="7uqHh_r9fjB" role="3clFbG">
+            <node concept="2ShNRf" id="7uqHh_r9e2x" role="2Oq$k0">
+              <node concept="1pGfFk" id="7uqHh_r9ehc" role="2ShVmc">
+                <property role="373rjd" value="true" />
+                <ref role="37wK5l" to="hm5v:7uqHh_r8v2S" resolve="DuplicateRowAction" />
+                <node concept="2OqwBi" id="7uqHh_r9eI7" role="37wK5m">
+                  <node concept="2WthIp" id="7uqHh_r9enj" role="2Oq$k0" />
+                  <node concept="1DTwFV" id="7uqHh_r9f2V" role="2OqNvi">
+                    <ref role="2WH_rO" node="7uqHh_r8q8K" resolve="cell" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="7uqHh_r9fJG" role="2OqNvi">
+              <ref role="37wK5l" to="hm5v:7IUya7cjexf" resolve="canExecute" />
+              <node concept="2OqwBi" id="7uqHh_r9gi6" role="37wK5m">
+                <node concept="2WthIp" id="7uqHh_r9fM_" role="2Oq$k0" />
+                <node concept="1DTwFV" id="7uqHh_r9gBA" role="2OqNvi">
+                  <ref role="2WH_rO" node="7uqHh_r8q8M" resolve="context" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1QGGSu" id="7uqHh_r8q92" role="3Uehp1">
+      <property role="1iqoE4" value="${module}/icons/splitRow.svg" />
     </node>
   </node>
 </model>
